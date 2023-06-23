@@ -18,3 +18,16 @@ function solve(arr) {
 }
 
 // or
+
+const solve = arr => [...new Set(arr.reverse())].reverse()
+
+// or
+
+function solve(arr) {
+  let a=[];
+  let ar=arr.reverse();
+  for (let i = 0; i < ar.length; ++i)
+    if (a.indexOf(ar[i])==-1)
+      a.push(ar[i]);
+  return a.reverse();
+}
