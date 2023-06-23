@@ -9,3 +9,8 @@ For input: [3, 4, 4, 3, 6, 3]
   remove the 3 at index 3
 Expected output: [4, 6, 3]
 */
+
+
+function solve(arr) {
+  return arr.filter((val, i) => arr.lastIndexOf(val) == i);
+}
