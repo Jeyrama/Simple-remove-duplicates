@@ -11,6 +11,8 @@ Expected output: [4, 6, 3]
 */
 
 
+//Solution
+
 function solve(arr) {
   return arr.filter((val, i) => arr.lastIndexOf(val) == i);
 }
